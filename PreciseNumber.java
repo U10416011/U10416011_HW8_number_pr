@@ -14,7 +14,15 @@ public class PreciseNumber {
 				case "sub":
 					System.out.println(a.subtract(b));
 					break;
-
+				case "mul":
+					System.out.println(a.multiply(b));
+					break;
+				case "div":
+					System.out.println(a.divide(b,100,BigDecimal.ROUND_HALF_UP));//after decimal point 100
+					break;
+				default:
+					System.out.println("ERROR");
+					break;
 
 			}
 		}
